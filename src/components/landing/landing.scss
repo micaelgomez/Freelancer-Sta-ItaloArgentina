@@ -1,0 +1,60 @@
+.landing {
+  background-color: #009246;
+  background: linear-gradient(0deg, white 5%, #009247 25%);
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  
+  
+
+  .title {
+    margin-top: 200px;
+    background-color: #067f41;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+      margin: 0;
+      padding: 10px;
+      font-size: 2em;
+      font-weight: 900;
+    }
+
+    .subtitle {
+      h4 {
+        margin-top: 20px;
+        font-weight: 100;
+        font-size: 1.5em;
+      }
+      a {
+        background-color: #067f41;
+        text-decoration: none;
+        padding: 10px 25px;
+        color: red;
+        border-radius: 7%;
+        border: 2px solid red;
+
+        transition: all 0.5s;
+
+        &:hover {
+          color: white;
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  .computadora {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 50px;
+   
+
+   img {
+       max-height: 500px;
+   }
+   
+}
+}

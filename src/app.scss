@@ -1,0 +1,39 @@
+.app {
+  .container-wsp {
+    max-width: 80%;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    cursor: pointer;
+
+    .icon {
+      height: 40px;
+      width: 40px;
+      color: #fff;
+      margin-top: 15px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: #fff;
+      transition: all 1s ease;
+
+      .icon {
+        color: #0df053;
+        transition: all 1s ease;
+      }
+    }
+  }
+}

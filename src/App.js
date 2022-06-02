@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./app.scss";
+import Carpetas from "./components/carpetas/Carpetas";
+import Landing from "./components/landing/Landing";
+import Proceso from "./components/proceso/Proceso";
+import Services from "./components/services/Services";
+import Team from "./components/team/Team";
+import Contact from "./components/contact/Contact";
+import Navbar from "./components/landing/navbar/Navbar";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Slide from "react-reveal/Slide";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className="app">
+      <div className=" container-wsp">
+        <a href="https://wa.me/5491158046018" rel="noreferrer" target="_blank">
+          <WhatsAppIcon className="icon" />
         </a>
-      </header>
+      </div>
+      <div className="nav">
+        <Navbar />
+      </div>
+      <Landing />
+      <Team />
+
+      <Slide left>
+        <Services />
+      </Slide>
+
+      <Proceso />
+      <Carpetas />
+      <Contact />
     </div>
   );
 }
