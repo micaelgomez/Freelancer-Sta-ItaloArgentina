@@ -1,14 +1,64 @@
+@import "../../global.scss";
+
+.navBar {
+  background-color: #009247;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .logo {
+      height: 80px;
+      cursor: pointer;
+      width: 30%;
+    }
+
+    .list {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        font-size: 25px;
+        padding: 10px 25px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
+
+        @include mobile {
+          font-size: 15px;
+          padding: 5px 15px;
+        }
+      }
+    }
+  }
+}
+
 .landing {
   background-color: #009246;
   background: linear-gradient(0deg, white 5%, #009247 25%);
   color: white;
-  margin-top: 100px;
-  margin-bottom: 150px;
-  
-  
+  margin-top: 80px;
+
+  @include mobile {
+    margin-top: 140px;
+  }
 
   .title {
-    margin-top: 200px;
     background-color: #067f41;
     margin: 0 auto;
     text-align: center;
@@ -34,7 +84,6 @@
         color: red;
         border-radius: 7%;
         border: 2px solid red;
-
         transition: all 0.5s;
 
         &:hover {
@@ -46,15 +95,17 @@
   }
 
   .computadora {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: 50px;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 
-   img {
-       max-height: 500px;
-   }
-   
-}
+    img {
+      height: 500px;
+      @include mobile {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }

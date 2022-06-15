@@ -1,3 +1,6 @@
+@import '../../global.scss';
+
+
 .contact {
   margin-top: 250px;
   background-color: red;
@@ -6,11 +9,13 @@
   .container {
     margin: 0 auto;
     max-width: 1200px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    @include mobile {
+     border: 1px solid black;
+      
+    }
     .title {
       text-align: center;
       margin-bottom: 50px;

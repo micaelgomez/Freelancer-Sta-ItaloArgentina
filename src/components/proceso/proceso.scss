@@ -1,11 +1,14 @@
-.proceso {
-  margin-top: 250px;
-  
+@import "../../global.scss";
 
+.proceso {
+  
   .center {
     max-width: 1400px;
     margin: 0 auto;
 
+    padding: 0 10px;
+
+   
     h1 {
       color: red;
       font-size: 2.5em;
@@ -16,9 +19,28 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
- 
+  
+
+      @include mobile {
+        flex-direction: column;
+        
+        .left {
+          
+          
+          .container-1 {
+            flex-direction: column;
+        
+
+            .frases {
+              margin: 10px 0;
+             width: 100%;
+            }
+          }
+        }
+      }
 
       .left {
+  
         width: 65%;
         display: flex;
         flex-direction: column;
@@ -27,7 +49,11 @@
     
       }
       img {
-        height: 400px;
+        height: 300px;
+        align-self: center;
+        object-fit: cover;
+
+
       }
 
       .container-1 {
@@ -41,7 +67,8 @@
           padding: 10px;
           width: 50%;
           border-left: 10px solid #067f41;
-        
+          // border: 1px solid green;
+
           h3 {
             font-weight: 400;
             font-size: 25px;

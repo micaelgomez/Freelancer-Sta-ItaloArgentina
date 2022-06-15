@@ -1,21 +1,39 @@
+@import "../../global.scss";
+
 .team {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  margin: 180px 0;
+
+
   .container {
+
+    box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
     max-width: 1400px;
     display: flex;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    
+    @include mobile {
+      flex-direction: column;
+
+    }
 
     .card {
-      max-width: 50%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
+
+      @include mobile {
+         align-self: center;
+         width: 91%;
+      }
+
+
       h1 {
         font-size: 2.5em;
         color: red;
@@ -40,8 +58,17 @@
     }
 
     img {
+      // border: 1px solid blue;
       height: 600px;
       border-radius: 5%;
+
+      @include mobile {
+        height: 500px;
+       object-fit: contain;
+        align-self: center;
+      
+      }
+    
     }
   }
 }

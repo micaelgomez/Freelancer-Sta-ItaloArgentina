@@ -5,7 +5,6 @@ import Proceso from "./components/proceso/Proceso";
 import Services from "./components/services/Services";
 import Team from "./components/team/Team";
 import Contact from "./components/contact/Contact";
-import Navbar from "./components/landing/navbar/Navbar";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Slide from "react-reveal/Slide";
 
@@ -17,9 +16,7 @@ function App() {
           <WhatsAppIcon className="icon" />
         </a>
       </div>
-      <div className="nav">
-        <Navbar />
-      </div>
+
       <Landing />
       <Team />
 
@@ -29,7 +26,7 @@ function App() {
 
       <Proceso />
       <Carpetas />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

@@ -1,17 +1,34 @@
+@import "../../global.scss";
+
 .services {
   background-color: #f4f4f4;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 200px 0;
+  padding: 25px 0;
+
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
 
+    @include mobile {
+      flex-direction: column;
+      
+    }
+
+
     .telefono {
       height: 700px;
+
+      @include mobile {
+        height: 500px;
+        object-fit: contain;
+        
+      }
+  
     }
 
     .left {
@@ -19,7 +36,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 50px;
-
+  
       h3 {
         font-weight: 400;
         font-size: 25px;

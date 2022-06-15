@@ -1,8 +1,8 @@
+@import "../../global.scss";
+
 .carpeta {
   margin-top: 150px;
-//   background-color: #f4f4f4;
   padding: 50px 0;
-
 
   .container {
     max-width: 1250px;
@@ -11,41 +11,50 @@
     flex-direction: column;
     justify-content: space-between;
 
-
     .container-top {
+      display: flex;
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .box {
+        background-color: #f4f4f4;
+        width: 300px;
+        padding: 20px;
+        margin: 0px 20px;
         display: flex;
+        flex-direction: column;
 
-
-        .box {
-            background-color: #F4F4F4;
-            width: 300px;
-            padding: 20px;
-            margin:0px 20px;
-
-            .logo {
-                color: #067F41;
-            }
-            h3 {
-                margin-top: 0;
-                font-size: 20px;
-                color: #067F41;
-            }
-
-            h5 {
-                font-weight: 500;
-                font-size: 1.2em;
-            }
+        @include mobile {
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin-bottom: 15px;
         }
+
+        .logo {
+          color: #067f41;
+        }
+        h3 {
+          margin-top: 0;
+          font-size: 20px;
+          color: #067f41;
+        }
+
+        h5 {
+          font-weight: 500;
+          font-size: 1.2em;
+        }
+      }
     }
 
     .container-bottom {
-   
-        h4{ 
-            font-size: 25px;
-            text-align: center;
-            color: red;
-            margin-bottom: 0;
-        }
+      h4 {
+        font-size: 25px;
+        text-align: center;
+        color: red;
+        margin-bottom: 0;
+      }
     }
   }
 }
