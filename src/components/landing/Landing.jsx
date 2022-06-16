@@ -13,14 +13,18 @@ function Landing() {
   return (
     <>
       <div className="navBar">
-        <div className="container">
-          <img src={logo} alt="Logo" className="logo" onClick={() => onTop()} />
-          <ul className="list">
-            <a onClick={() => onTop()}>Inicio</a>
-            <a href="/#team" className="list-title">Equipo</a>
-            <a href="/#services" className="list-title">Servicios</a>
-            <a href="/#contact" className="list-title" >Contacto</a>
-          </ul>
+        <img src={logo} alt="Logo" className="logo" onClick={() => onTop()} />
+        <div className="list">
+          <a href="/#" onClick={() => onTop()}>Inicio</a>
+          <a href="/#team" className="list-title">
+            Equipo
+          </a>
+          <a href="/#services" className="list-title">
+            Servicios
+          </a>
+          <a href="/#contact" className="list-title">
+            Contacto
+          </a>
         </div>
       </div>
       <div className="landing" id="landing">
