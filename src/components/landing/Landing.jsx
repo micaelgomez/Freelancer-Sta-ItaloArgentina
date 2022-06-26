@@ -15,7 +15,9 @@ function Landing() {
       <div className="navBar">
         <img src={logo} alt="Logo" className="logo" onClick={() => onTop()} />
         <div className="list">
-          <a href="/#" onClick={() => onTop()}>Inicio</a>
+          <a href="/#" onClick={() => onTop()}>
+            Inicio
+          </a>
           <a href="/#team" className="list-title">
             Equipo
           </a>
@@ -27,7 +29,7 @@ function Landing() {
           </a>
         </div>
       </div>
-      <div className="landing" id="landing">
+      {/* <div className="landing" id="landing">
         <div className="title">
           <Rotate top left>
             <h1>La manera mas fácil de realizar tu ciudadanía</h1>
@@ -46,7 +48,7 @@ function Landing() {
             <img src={compu} alt="Computadora" />
           </Slide>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
