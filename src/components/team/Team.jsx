@@ -5,8 +5,8 @@ function Team() {
   return (
     <div className="team" id="team">
       <div className="container">
+        <h1>¿Quienes Somos?</h1>
         <div className="card">
-          <h1>¿Quienes Somos?</h1>
           <div className="ceos">
             <h4>Veronica Beros</h4>
             <h6>Directora</h6>

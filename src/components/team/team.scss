@@ -6,17 +6,15 @@
   justify-content: center;
   margin: 180px 0;
   background-color: white;
- 
-  
-  .container {
-    -webkit-box-shadow: 0px 20px 0px -10px #ffffff,
-    0px -20px 0px -10px #ffffff, 20px 0px 0px -10px #ffffff,
-    -20px 0px 0px -10px #ffffff, 0px 0px 0px 10px #ff0000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-   box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
-    20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
-    0px 0px 0px 10px #ff0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
+  .container {
+    background-image: url("./cool-background (1).svg");
+    -webkit-box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
+      20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
+      0px 0px 0px 10px #ff0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
+      20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
+      0px 0px 0px 10px #ff0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     max-width: 1200px;
     padding: 50px 0;
     display: flex;
@@ -24,8 +22,25 @@
 
     @include mobile {
       flex-direction: column;
+
+      h1 {
+        order: -1;
+      }
+
+      img {
+        order: 1;
+      }
+       .card {
+        order: 2;
+       }
+
     }
 
+    h1 {
+      font-size: 2.5em;
+      color: red;
+      // background-color: #ff0000;
+    }
     .card {
       width: 50%;
       display: flex;
@@ -37,19 +52,14 @@
         width: 91%;
       }
 
-      h1 {
-        font-size: 2.5em;
-        color: red;
-      }
-
       .ceos {
-         box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+        box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
         background-color: white;
         max-width: 200px;
         padding: 10px 25px;
-       
+
         h4 {
           font-size: 22px;
           margin: 0;
@@ -64,11 +74,12 @@
       h3 {
         font-weight: 400;
         font-size: 20px;
+        text-align: left;
+        margin-left: 1px;
       }
     }
 
     img {
-      // border: 1px solid blue;
       height: 450px;
       border-radius: 5%;
 
