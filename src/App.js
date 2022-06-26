@@ -20,11 +20,11 @@ function App() {
       <Landing />
       <Team />
 
-      {/* <Slide left>
+      <Slide left>
         <Services />
       </Slide>
 
-      <Proceso />
+      {/* <Proceso />
       <Carpetas /> */}
       {/* <Contact /> */}
     </div>
