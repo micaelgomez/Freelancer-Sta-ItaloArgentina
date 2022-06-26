@@ -29,7 +29,7 @@ function Landing() {
           </a>
         </div>
       </div>
-      {/* <div className="landing" id="landing">
+      <div className="landing" id="landing">
         <div className="title">
           <Rotate top left>
             <h1>La manera mas fácil de realizar tu ciudadanía</h1>
@@ -43,12 +43,12 @@ function Landing() {
           </Rotate>
         </div>
 
-        <div className="computadora">
+        {/* <div className="computadora">
           <Slide right>
             <img src={compu} alt="Computadora" />
           </Slide>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
     </>
   );
 }

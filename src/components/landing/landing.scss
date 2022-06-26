@@ -6,10 +6,6 @@
   align-items: center;
   justify-content: space-around;
 
-  // position: fixed;
-  // top: 0;
-  // z-index: 999;
-
   @include mobile {
     flex-direction: column;
   }
@@ -22,7 +18,10 @@
   .list {
     display: flex;
     justify-content: space-around;
-
+    @include mobile {
+      padding: 10px;
+    }
+    
     a {
       font-size: 25px;
       padding: 10px 25px;
