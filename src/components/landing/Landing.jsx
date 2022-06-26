@@ -30,18 +30,18 @@ function Landing() {
         </div>
       </div>
       <div className="landing" id="landing">
-          <Rotate top left>
         <div className="title">
           <h1>La manera mas fácil de realizar tu ciudadanía</h1>
-          <div className="subtitle">
-            <h4>
-              Como profesionales del área consular conocemos la dificultad de
-              realizar tramites <br /> por eso creamos el camino más sencillo
-              hacia él.
-            </h4>
-          </div>
-        </div>
+          <Rotate top left>
+            <div className="subtitle">
+              <h4>
+                Como profesionales del área consular conocemos la dificultad de
+                realizar tramites <br /> por eso creamos el camino más sencillo
+                hacia él.
+              </h4>
+            </div>
           </Rotate>
+        </div>
 
         <div className="computadora">
           {/* <Slide right> */}
