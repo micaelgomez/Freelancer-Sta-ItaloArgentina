@@ -18,9 +18,9 @@ function App() {
       </div>
 
       <Landing />
-      {/* <Team />
+      <Team />
 
-      <Slide left>
+      {/* <Slide left>
         <Services />
       </Slide>
 
