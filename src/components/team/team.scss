@@ -5,20 +5,25 @@
   align-items: center;
   justify-content: center;
   margin: 180px 0;
-
-
+  background-color: white;
+ 
+  
   .container {
+    -webkit-box-shadow: 0px 20px 0px -10px #ffffff,
+    0px -20px 0px -10px #ffffff, 20px 0px 0px -10px #ffffff,
+    -20px 0px 0px -10px #ffffff, 0px 0px 0px 10px #ff0000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+   box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
+    20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
+    0px 0px 0px 10px #ff0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
-    box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
-    max-width: 1400px;
+    max-width: 1200px;
+    padding: 50px 0;
     display: flex;
     justify-content: space-around;
-    
+
     @include mobile {
       flex-direction: column;
-
     }
 
     .card {
@@ -27,12 +32,10 @@
       flex-direction: column;
       justify-content: space-around;
 
-
       @include mobile {
-         align-self: center;
-         width: 91%;
+        align-self: center;
+        width: 91%;
       }
-
 
       h1 {
         font-size: 2.5em;
@@ -40,35 +43,40 @@
       }
 
       .ceos {
+         box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -17px 17px 5px -1px rgba(0, 0, 0, 0.75);
+        background-color: white;
+        max-width: 200px;
+        padding: 10px 25px;
+       
         h4 {
-          font-size: 28px;
+          font-size: 22px;
           margin: 0;
         }
         h6 {
           margin: 0;
           color: red;
-          font-size: 18px;
+          font-size: 16px;
         }
       }
 
       h3 {
         font-weight: 400;
-        font-size: 25px;
+        font-size: 20px;
       }
     }
 
     img {
       // border: 1px solid blue;
-      height: 600px;
+      height: 450px;
       border-radius: 5%;
 
       @include mobile {
         height: 500px;
-       object-fit: contain;
+        object-fit: contain;
         align-self: center;
-      
       }
-    
     }
   }
 }

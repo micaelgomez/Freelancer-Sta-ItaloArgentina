@@ -1,12 +1,10 @@
 import "./team.scss";
 import equipo from "./equipo.png";
 
-
 function Team() {
   return (
-    <div className="team" id='team'>
+    <div className="team" id="team">
       <div className="container">
-    
         <div className="card">
           <h1>¿Quienes Somos?</h1>
           <div className="ceos">
@@ -21,13 +19,13 @@ function Team() {
             <h4>Anna Cerquetti</h4>
             <h6>Abogada</h6>
           </div>
-        <h3>
-          Somos un equipo especializado en tramites consulares, contamos con mas
-          de 10 años de experiencia que nos permiten realizarlos de la forma mas
-          ágil y eficiente.
-        </h3>
+          <h3>
+            Somos un equipo especializado en tramites consulares, contamos con
+            mas de 10 años de experiencia que nos permiten realizarlos de la
+            forma mas ágil y eficiente.
+          </h3>
         </div>
-     
+
         <img src={equipo} alt="equipo" />
       </div>
     </div>
