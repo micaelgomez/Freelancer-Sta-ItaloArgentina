@@ -31,22 +31,22 @@ function Landing() {
       </div>
       <div className="landing" id="landing">
         <div className="title">
-          <Rotate top left>
-            <h1>La manera mas fácil de realizar tu ciudadanía</h1>
-            <div className="subtitle">
-              <h4>
-                Como profesionales del área consular conocemos la dificultad de
-                realizar tramites <br /> por eso creamos el camino más sencillo
-                hacia él.
-              </h4>
-            </div>
-          </Rotate>
+          {/* <Rotate top left> */}
+          <h1>La manera mas fácil de realizar tu ciudadanía</h1>
+          <div className="subtitle">
+            <h4>
+              Como profesionales del área consular conocemos la dificultad de
+              realizar tramites <br /> por eso creamos el camino más sencillo
+              hacia él.
+            </h4>
+          </div>
+          {/* </Rotate> */}
         </div>
 
         <div className="computadora">
-          <Slide right>
-            <img src={compu} alt="Computadora" />
-          </Slide>
+          {/* <Slide right> */}
+          <img src={compu} alt="Computadora" />
+          {/* </Slide> */}
         </div>
       </div>
     </>
