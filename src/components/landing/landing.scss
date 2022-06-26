@@ -21,7 +21,7 @@
     @include mobile {
       padding: 10px;
     }
-    
+
     a {
       font-size: 25px;
       padding: 10px 25px;
@@ -45,10 +45,9 @@
   background-color: #009246;
   background: linear-gradient(0deg, white 5%, #009247 25%);
   color: white;
-  border: 1px solid red;
+
 
   .title {
-    // border: 1px solid red;
     background-color: #067f41;
     text-align: center;
     padding: 20px;
@@ -68,7 +67,7 @@
     margin-top: 50px;
 
     img {
-      height: 500px;
+      height: 450px;
 
       @include mobile {
         width: 100%;

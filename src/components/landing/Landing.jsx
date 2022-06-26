@@ -43,11 +43,11 @@ function Landing() {
           </Rotate>
         </div>
 
-        {/* <div className="computadora">
+        <div className="computadora">
           <Slide right>
             <img src={compu} alt="Computadora" />
           </Slide>
-        </div> */}
+        </div>
       </div>
     </>
   );
