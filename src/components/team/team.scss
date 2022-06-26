@@ -22,7 +22,6 @@
 
     @include mobile {
       flex-direction: column;
-
       h1 {
         order: -1;
       }
@@ -59,7 +58,9 @@
         background-color: white;
         max-width: 200px;
         padding: 10px 25px;
-
+        @include mobile { 
+          margin-bottom: 10px;
+        }
         h4 {
           font-size: 22px;
           margin: 0;
@@ -84,7 +85,8 @@
       border-radius: 5%;
 
       @include mobile {
-        height: 500px;
+        margin-bottom: 50px;
+        height: 450px;
         object-fit: contain;
         align-self: center;
       }
