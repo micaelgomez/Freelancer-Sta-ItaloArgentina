@@ -30,8 +30,8 @@ function Landing() {
         </div>
       </div>
       <div className="landing" id="landing">
+          <Rotate top left>
         <div className="title">
-          {/* <Rotate top left> */}
           <h1>La manera mas fácil de realizar tu ciudadanía</h1>
           <div className="subtitle">
             <h4>
@@ -40,8 +40,8 @@ function Landing() {
               hacia él.
             </h4>
           </div>
-          {/* </Rotate> */}
         </div>
+          </Rotate>
 
         <div className="computadora">
           {/* <Slide right> */}
