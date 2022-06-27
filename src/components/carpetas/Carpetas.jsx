@@ -8,7 +8,7 @@ import Swing from "react-reveal/Swing";
 
 function Carpetas() {
   return (
-    <div className="carpeta">
+    <div className="carpeta" id ="carpeta">
       <div className="container">
         <div className="container-top">
           <Flip right>

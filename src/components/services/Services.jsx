@@ -18,7 +18,7 @@ function Services() {
             posibilidad de involucrarte si lo deseas.
           </h3>
           <div className="button">
-            <a href="#proceso" className="btn">
+            <a href="#carpeta" className="btn">
               Iniciar
             </a>
           </div>

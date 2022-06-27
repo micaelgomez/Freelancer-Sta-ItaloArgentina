@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .carpeta {
-  margin-top: 150px;
+  // margin-top: 150px;
   padding: 50px 0;
 
   .container {
@@ -24,6 +24,10 @@
         margin: 0px 20px;
         display: flex;
         flex-direction: column;
+        -webkit-box-shadow: -10px 0px 13px -7px #000000,
+          10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+          5px 5px 15px 5px rgba(0, 0, 0, 0);
 
         @include mobile {
           align-items: center;
