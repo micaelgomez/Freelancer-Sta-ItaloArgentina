@@ -25,7 +25,7 @@ function App() {
       </Slide>
 
       <Proceso />
-      {/* <Carpetas /> */}
+      <Carpetas />
       {/* <Contact /> */}
     </div>
   );
