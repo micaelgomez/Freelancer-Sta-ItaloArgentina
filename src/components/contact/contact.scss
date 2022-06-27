@@ -1,13 +1,9 @@
-@import '../../global.scss';
-
+@import "../../global.scss";
 
 .contact {
   margin-top: 250px;
   background-color: red;
   background: linear-gradient(180deg, white 5%, #fe2835 25%);
-
- 
-
 
   .container {
     margin: 0 auto;
@@ -15,10 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include mobile {
-     border: 1px solid black;
-      
-    }
+
     .title {
       text-align: center;
       margin-bottom: 50px;
@@ -30,23 +23,33 @@
       }
       h4 {
         font-size: 2em;
-
         margin: 0;
         font-weight: 400;
+        @include mobile {
+          font-size: 25px;
+        }
       }
     }
 
-    .body {
+    .cont-redes {
       padding: 5px;
       display: flex;
       justify-content: space-between;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+      }
 
       .redes {
         display: flex;
         flex-direction: column;
         align-items: center;
-        // width: 35%;
         padding: 30px;
+
+        @include mobile {
+          padding: 15px;
+        }
 
         h3 {
           text-align: center;
@@ -84,6 +87,9 @@
       width: 100%;
       text-align: center;
 
+      @include mobile {
+        margin-top: 70px;
+      }
       h4 {
         font-size: 15px;
         color: white;

@@ -13,11 +13,9 @@ function contact() {
           <h4>Tenes muchas maneras de encontrarnos</h4>
         </div>
 
-        <div className="body">
+        <div className="cont-redes">
           <div className="redes">
             <h3>Redes</h3>
-
-            {/* <img src={whatsapp} alt="whatsapp" /> */}
             <a
               rel="noreferrer"
               href="https://www.instagram.com/sociedaditaloargentina/"
