@@ -24,8 +24,8 @@ function App() {
         <Services />
       </Slide>
 
-      {/* <Proceso />
-      <Carpetas /> */}
+      <Proceso />
+      {/* <Carpetas /> */}
       {/* <Contact /> */}
     </div>
   );

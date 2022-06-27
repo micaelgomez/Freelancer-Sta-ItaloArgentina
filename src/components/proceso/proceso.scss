@@ -1,14 +1,12 @@
 @import "../../global.scss";
 
 .proceso {
-  
   .center {
     max-width: 1400px;
     margin: 0 auto;
 
     padding: 0 10px;
 
-   
     h1 {
       color: red;
       font-size: 2.5em;
@@ -19,41 +17,37 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-  
 
       @include mobile {
         flex-direction: column;
-        
+
         .left {
-          
-          
           .container-1 {
             flex-direction: column;
-        
 
             .frases {
               margin: 10px 0;
-             width: 100%;
+              width: 100%;
+
+              h3 {
+                font-size: 20px;
+              }
             }
           }
         }
       }
 
       .left {
-  
         width: 65%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-self: center;
-    
       }
       img {
         height: 300px;
         align-self: center;
         object-fit: cover;
-
-
       }
 
       .container-1 {
@@ -61,7 +55,7 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        margin: 30px 0 ;
+        margin: 30px 0;
 
         .frases {
           padding: 10px;
@@ -74,10 +68,9 @@
             font-size: 25px;
           }
 
-
           span {
-              font-weight: 600;
-              color: #067f41;
+            font-weight: 600;
+            color: #067f41;
           }
         }
       }
