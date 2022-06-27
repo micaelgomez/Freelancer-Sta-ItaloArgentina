@@ -26,7 +26,7 @@ function App() {
 
       <Proceso />
       <Carpetas />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

@@ -9,7 +9,7 @@ function contact() {
     <div className="contact " id="contact">
       <div className="container">
         <div className="title">
-          <h2>Contactos</h2>
+          <h2>Contacto</h2>
           <h4>Tenes muchas maneras de encontrarnos</h4>
         </div>
 
